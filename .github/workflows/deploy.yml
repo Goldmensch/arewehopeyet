@@ -25,7 +25,7 @@ jobs:
         shell: sh
 
       - name: Build website wasm-pack
-        run: devenv shell wasm-pack build --release
+        run: devenv shell "wasm-pack build --release"
       - name: Build website yarm
         run: cd www && yarn install --frozen-lockfile && yarn run build
 
