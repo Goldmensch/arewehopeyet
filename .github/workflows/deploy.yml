@@ -21,7 +21,7 @@ jobs:
           name: devenv
 
       - name: Install devenv.sh
-        run: nix profile install --accept-flake-config nixpkgs#devenv
+        run: nix profile install tarball+https://install.devenv.sh/0.6.3
         shell: sh
 
       - name: Build website wasm-pack
