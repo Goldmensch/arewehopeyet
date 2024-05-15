@@ -1,6 +1,9 @@
 { inputs, ... }:
   let
-    rust_overlay = import (builtins.fetchTarball "https://github.com/oxalica/rust-overlay/archive/master.tar.gz");
+    rust_overlay = import (builtins.fetchTarball {
+      url = "https://github.com/oxalica/rust-overlay/archive/master.tar.gz";
+      sha256 = "";
+    });
     pkgs = import inputs.nixpkgs { overlays = [rust_overlay]; };
 
   in {
