@@ -1,7 +1,7 @@
 import * as aplang from "areweaplangyet-wasm";
 
-const REPO = "APLanguage/aplang-rs";
-const START_TIME = 1613750769000.0;
+const REPO = "goldmensch/hope";
+const START_TIME = 1674738628000.0;
 
 function getPhrase(days) {
   if (days == 0) {
